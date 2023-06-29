@@ -131,8 +131,8 @@ if (listName === "Today"){
 app.get("/about", function(req, res){
     res.render("about");
 });
-    
-app.listen(3000, function(){
+    const port = 3000
+app.listen(process.env.PORT || port, function(){
     console.log("server started on port 3000")
 });
 }
